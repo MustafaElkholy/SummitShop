@@ -1,0 +1,210 @@
+[
+  {
+    "Name": "Air Jordan 1",
+    "Description": "The iconic Air Jordan 1 sneakers, known for their comfort and style.",
+    "Price": 170,
+    "PictureURL": "images/products/nike-air-jordan1.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Yeezy Boost 350",
+    "Description": "Adidas Yeezy Boost 350, designed by Kanye West, offering premium comfort.",
+    "Price": 220,
+    "PictureURL": "images/products/adidas-yeezy350.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "iPhone 14 Pro",
+    "Description": "Apple's latest flagship smartphone with advanced features.",
+    "Price": 999,
+    "PictureURL": "images/products/apple-iphone14pro.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Galaxy S23",
+    "Description": "Samsung's top-of-the-line smartphone with an impressive camera system.",
+    "Price": 899,
+    "PictureURL": "images/products/samsung-galaxys23.png",
+    "ProductTypeId": 2,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "PlayStation 5",
+    "Description": "Sony's latest gaming console with immersive graphics and fast load times.",
+    "Price": 499,
+    "PictureURL": "images/products/sony-ps5.png",
+    "ProductTypeId": 7,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "Xbox Series X",
+    "Description": "Microsoft's powerful gaming console with 4K gaming capabilities.",
+    "Price": 499,
+    "PictureURL": "images/products/microsoft-xboxseriesx.png",
+    "ProductTypeId": 7,
+    "ProductBrandId": 7
+  },
+  {
+    "Name": "MacBook Pro 16\"",
+    "Description": "Apple's high-performance laptop for professionals.",
+    "Price": 2399,
+    "PictureURL": "images/products/apple-macbookpro16.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Dell XPS 13",
+    "Description": "Dell's ultraportable laptop with stunning display and powerful internals.",
+    "Price": 1199,
+    "PictureURL": "images/products/dell-xps13.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 6
+  },
+  {
+    "Name": "Galaxy Watch 5",
+    "Description": "Samsung's smartwatch with fitness tracking and long battery life.",
+    "Price": 299,
+    "PictureURL": "images/products/samsung-galaxywatch5.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Apple Watch Series 8",
+    "Description": "Apple's latest smartwatch with health monitoring features.",
+    "Price": 399,
+    "PictureURL": "images/products/apple-watchseries8.png",
+    "ProductTypeId": 4,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Sony WH-1000XM5",
+    "Description": "Sony's premium noise-canceling headphones for immersive sound.",
+    "Price": 349,
+    "PictureURL": "images/products/sony-wh1000xm5.png",
+    "ProductTypeId": 5,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "AirPods Pro",
+    "Description": "Apple's high-end wireless earbuds with active noise cancellation.",
+    "Price": 249,
+    "PictureURL": "images/products/apple-airpodspro.png",
+    "ProductTypeId": 5,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Surface Pro 9",
+    "Description": "Microsoft's versatile 2-in-1 tablet and laptop.",
+    "Price": 999,
+    "PictureURL": "images/products/microsoft-surfacepro9.png",
+    "ProductTypeId": 6,
+    "ProductBrandId": 7
+  },
+  {
+    "Name": "iPad Pro 12.9\"",
+    "Description": "Apple's powerful tablet for creative professionals.",
+    "Price": 1099,
+    "PictureURL": "images/products/apple-ipadpro129.png",
+    "ProductTypeId": 6,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Samsung Galaxy Tab S8",
+    "Description": "Samsung's high-end tablet with S Pen support.",
+    "Price": 799,
+    "PictureURL": "images/products/samsung-galaxytabs8.png",
+    "ProductTypeId": 6,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Canon EOS R5",
+    "Description": "Canon's professional-grade mirrorless camera with 45MP sensor.",
+    "Price": 3899,
+    "PictureURL": "images/products/canon-eosr5.png",
+    "ProductTypeId": 8,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "Sony Alpha 7 IV",
+    "Description": "Sony's versatile mirrorless camera with advanced features.",
+    "Price": 2499,
+    "PictureURL": "images/products/sony-alpha7iv.png",
+    "ProductTypeId": 8,
+    "ProductBrandId": 5
+  },
+  {
+    "Name": "Nike Air Max 270",
+    "Description": "Comfortable and stylish sneakers from Nike's Air Max series.",
+    "Price": 150,
+    "PictureURL": "images/products/nike-airmax270.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Adidas Ultraboost 21",
+    "Description": "High-performance running shoes with responsive cushioning.",
+    "Price": 180,
+    "PictureURL": "images/products/adidas-ultraboost21.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Nike Blazer Mid '77",
+    "Description": "Retro-inspired sneakers with classic Nike styling.",
+    "Price": 100,
+    "PictureURL": "images/products/nike-blazermid77.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 1
+  },
+  {
+    "Name": "Samsung Galaxy Buds Pro",
+    "Description": "Samsung's premium true wireless earbuds with noise cancellation.",
+    "Price": 199,
+    "PictureURL": "images/products/samsung-galaxybudspro.png",
+    "ProductTypeId": 5,
+    "ProductBrandId": 4
+  },
+  {
+    "Name": "Apple AirPods Max",
+    "Description": "Apple's over-ear headphones with high-fidelity sound.",
+    "Price": 549,
+    "PictureURL": "images/products/apple-airpodsmax.png",
+    "ProductTypeId": 5,
+    "ProductBrandId": 3
+  },
+  {
+    "Name": "Adidas NMD_R1",
+    "Description": "Comfortable and stylish sneakers with a modern design.",
+    "Price": 140,
+    "PictureURL": "images/products/adidas-nmdr1.png",
+    "ProductTypeId": 1,
+    "ProductBrandId": 2
+  },
+  {
+    "Name": "Microsoft Surface Laptop 4",
+    "Description": "Sleek and powerful laptop for productivity on the go.",
+    "Price": 1299,
+    "PictureURL": "images/products/microsoft-surfacelaptop4.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 7
+  },
+  {
+    "Name": "Dell Inspiron 15",
+    "Description": "Affordable and reliable laptop for everyday use.",
+    "Price": 599,
+    "PictureURL": "images/products/dell-inspiron15.png",
+    "ProductTypeId": 3,
+    "ProductBrandId": 6
+  },
+  {
+    "Name": "Sony WF-1000XM4",
+    "Description": "Sony's true wireless earbuds with industry-leading noise cancellation.",
+    "Price": 279,
+    "PictureURL": "images/products/sony-WF-1000XM4",
+    "ProductTypeId": 5,
+    "ProductBrandId": 5
+  }
+]

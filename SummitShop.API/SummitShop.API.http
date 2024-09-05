@@ -1,0 +1,6 @@
+@SummitShop.API_HostAddress = http://localhost:5042
+
+GET {{SummitShop.API_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
