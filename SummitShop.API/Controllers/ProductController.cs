@@ -1,4 +1,6 @@
 ﻿using AutoMapper;
+using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 using SummitShop.API.DTOs;
@@ -32,6 +34,8 @@ namespace SummitShop.API.Controllers
 
         [ProducesResponseType(typeof(Pagination<ProductResponseDTO>),StatusCodes.Status200OK)]
         [HttpPost]
+        //[Authorize(AuthenticationSchemes =JwtBearerDefaults.AuthenticationScheme)]
+        //[Authorize]
         public async Task<ActionResult<Pagination<ProductResponseDTO>>> GetAllProductsAsync(ProductSpecificationParameters productSpecParams)
         {
             var spec = new ProductWithBrandAndTypeSpecifications(productSpecParams);

@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Http;
+﻿using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using SummitShop.API.DTOs;
@@ -6,6 +7,7 @@ using SummitShop.API.Errors;
 using SummitShop.Core.Entities.Identity;
 using SummitShop.Core.Services;
 using System.ComponentModel.DataAnnotations;
+using System.Security.Claims;
 
 namespace SummitShop.API.Controllers
 {
@@ -81,6 +83,20 @@ namespace SummitShop.API.Controllers
             });
         }
 
+        [HttpGet("GetCurrentUser")] // Get the current User that sent this request
+        [Authorize]
+        public async Task<ActionResult<UserDTO>> GetCurrentUser()
+        {
+            var userEmail = User.FindFirstValue(ClaimTypes.Email);
 
+            var user = await _userManager.FindByEmailAsync(userEmail);
+
+            return Ok(new UserDTO
+            {
+                DisplayName = user.DisplayName,
+                Email = user.Email,
+                Token = await tokenService.CreateJWTTokenAsync(user,_userManager)
+            });
+        }
     }
 }
