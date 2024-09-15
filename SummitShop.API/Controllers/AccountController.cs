@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using SummitShop.API.DTOs;
 using SummitShop.API.Errors;
 using SummitShop.Core.Entities.Identity;
+using SummitShop.Core.Services;
 using System.ComponentModel.DataAnnotations;
 
 namespace SummitShop.API.Controllers
@@ -14,11 +15,17 @@ namespace SummitShop.API.Controllers
     {
         private readonly UserManager<ApplicationUser> _userManager;
         private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly ITokenService tokenService;
 
-        public AccountController(UserManager<ApplicationUser> userManager, SignInManager<ApplicationUser> signInManager)
+        public AccountController(
+                                UserManager<ApplicationUser> userManager,
+                                SignInManager<ApplicationUser> signInManager,
+                                ITokenService tokenService
+            )
         {
             _userManager = userManager;
             _signInManager = signInManager;
+            this.tokenService = tokenService;
         }
 
         [HttpPost("Login")] // POST:  /api/Account/Login
@@ -46,7 +53,7 @@ namespace SummitShop.API.Controllers
             {
                 DisplayName = user.DisplayName,
                 Email = user.Email,
-                Token = "This will be token"
+                Token = await tokenService.CreateJWTTokenAsync(user, _userManager)
             });
 
         }
@@ -63,14 +70,14 @@ namespace SummitShop.API.Controllers
 
             };
 
-            var result = await _userManager.CreateAsync(user,model.Password);
+            var result = await _userManager.CreateAsync(user, model.Password);
             if (!result.Succeeded) return BadRequest(new APIResponse(400));
 
             return Ok(new UserDTO
             {
                 DisplayName = user.DisplayName,
                 Email = user.Email,
-                Token = "This will be token"
+                Token = await tokenService.CreateJWTTokenAsync(user, _userManager)
             });
         }
 

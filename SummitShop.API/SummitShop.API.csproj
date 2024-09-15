@@ -18,6 +18,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\SummitShop.Repository\SummitShop.Repository.csproj" />
+    <ProjectReference Include="..\SummitShop.Service\SummitShop.Service.csproj" />
   </ItemGroup>
 
 </Project>

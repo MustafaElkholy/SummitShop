@@ -1,4 +1,5 @@
 
+using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Http.HttpResults;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
@@ -46,18 +47,20 @@ namespace SummitShop.API
 
             builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options =>
             {
+                #region Validations
                 //options.Password.RequireDigit = false;
                 //options.Password.RequireLowercase = false;
                 //options.Password.RequireNonAlphanumeric = false;
                 //options.Password.RequireUppercase = false;
-                //options.Password.RequiredLength = 6; // Adjust as needed
+                //options.Password.RequiredLength = 6; // Adjust as needed 
+                #endregion
             })
             .AddEntityFrameworkStores<ApplicationIdentityDbContext>()
             .AddDefaultTokenProviders();
             //.AddDefaultTokenProviders();
 
 
-            builder.Services.AddAuthentication();
+            builder.Services.AddAuthentication(JwtBearerDefaults.AuthenticationScheme).AddJwtBearer();
 
 
             //ApplicationServicesExtension.AddApplicationService(builder.Services);

@@ -10,6 +10,6 @@ namespace SummitShop.Core.Services
 {
     public interface ITokenService
     {
-        Task<string> CreateTokenAsync(ApplicationUser user, UserManager<ApplicationUser> userManager);
+        Task<string> CreateJWTTokenAsync(ApplicationUser user, UserManager<ApplicationUser> userManager);
     }
 }

@@ -21,7 +21,7 @@ namespace SummitShop.Service.ServiceImplementation
         {
             this.configuration = configuration;
         }
-        public async Task<string> CreateTokenAsync(ApplicationUser user, UserManager<ApplicationUser> userManager)
+        public async Task<string> CreateJWTTokenAsync(ApplicationUser user, UserManager<ApplicationUser> userManager)
         {
             var authClaims = new List<Claim>()
             {

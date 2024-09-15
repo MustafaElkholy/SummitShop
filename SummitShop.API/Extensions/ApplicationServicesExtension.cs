@@ -2,7 +2,9 @@
 using SummitShop.API.Errors;
 using SummitShop.API.Helpers;
 using SummitShop.Core.Repositories;
+using SummitShop.Core.Services;
 using SummitShop.Repository.RepositoryImplementation;
+using SummitShop.Service.ServiceImplementation;
 
 namespace SummitShop.API.Extensions
 {
@@ -20,10 +22,15 @@ namespace SummitShop.API.Extensions
             // Basket Repository
             services.AddScoped(typeof(IBasketRepository), typeof(BasketRepository));
 
+            // Register ITokenService
+
+            services.AddScoped(typeof(ITokenService), typeof(TokenService));
+
 
             //builder.Services.AddAutoMapper(m => m.AddProfile(new MappingProfiles()));
             services.AddAutoMapper(typeof(MappingProfiles));
-
+            
+            
 
             // how to configure the response of invalid model state (the validation error)
             services.Configure<ApiBehaviorOptions>(options =>
